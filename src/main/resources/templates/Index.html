@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10.3.0/swiper-bundle.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+<div id="menu">
+    <ul>
+        <li><a href="#">New arrival</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Kids</a></li>
+    </ul>
+</div>
+<div class="basket">
+    <h3 class="title">Basket</h3>
+    <div class="close close-button icon-close">×</div>
+    <div class="basket-uptitles">
+        <p class="basket-uptitle-1">Tovar name</p>
+        <p class="basket-uptitle-2">count</p>
+        <p class="basket-uptitle-3">price</p>
+    </div>
+    <div class="basket-items"></div>
+    <div class="basket-order">
+        <p class="close"><i class="icon-arrow">←</i> return to shopiing</p>
+        <p class="basket-order-price">Total: <span class="basket-order-total">0 $</span></p>
+        <div class="basket-order-buttons">
+            <div class="basket-order-buy order">Order</div>
+            <div class="basket-order-clear order">Clear basket</div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <section class="section">
+        <header>
+            <div class="header__section headsection">
+                <div id="burger-menu">
+                    <span></span>
+                </div>
+                <a href="" class="header__text-hover">New arrival</a>
+                <a href="" class="header__text-hover">Men</a>
+                <a href="" class="header__text-hover">Women</a>
+                <a href="" class="header__text-hover">Kids</a>
+            </div>
+            <div class="header__section-logo">
+                <img src="../img/Logo.png" class="header__logo">
+            </div>
+            <div class="header__section-shop-list">
+                <div class="shop-list__cooperation">
+                    <div class="search-button">
+                        <input type="search" id="search" placeholder="Search" class="search-input">
+                        <button class="btn-search">
+                            <ion-icon name="search-outline" class="span-icon"></ion-icon>
+                        </button>
+                    </div>
+                    <div class="account-button" id="user-logo-info">
+                        <span class="account-icon"><img src="../img/Account.png" alt=""></span>
+                    </div>
+                    <div class="basket-button" id="basket-icon">
+                        <span class="basket-icon"><img src="../img/Basket.png" alt=""></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="section-swiper">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide__tovar-sections">
+                            <div class="tovar-sections__photo">
+                                <img src="../img/Product-Image.png" alt="" class="photo-boot">
+                            </div>
+                            <div class="tovar-section-description">
+                                <h2>AIR JORDAN 1 <br>RETRO HIGH OG</h2>
+                                <div class="description__price-buy">
+                                    <h4>$275</h4>
+                                    <div class="size-change">
+                                        <p>size</p>
+                                        <div id="down-triangle"></div>
+                                        <div class="dropdown">
+                                            <span>41</span>
+                                            <div class="dropdown-content">
+                                                <p>42</p>
+                                            </div>
+                                        </div>
+                                        <div class="add-to-basket-button">
+                                                <span class="add-to-basket-icon"><img src="../img/Basket.png"
+                                                                                      alt=""></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="description__more-info">
+                                    <a href="" class="descrition__show-more">More details</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide__tovar-sections">
+                            <div class="tovar-sections__photo">
+                                <img src="../img/Product-image-yellow.png" alt="" class="photo-boot">
+                            </div>
+                            <div class="tovar-section-description">
+                                <h2>AIR JORDAN 1 <br>RETRO HIGH OG</h2>
+                                <div class="description__price-buy">
+                                    <h4>$275</h4>
+                                    <div class="size-change">
+                                        <p>size</p>
+                                        <div id="down-triangle"></div>
+                                        <div class="dropdown">
+                                            <span>41</span>
+                                            <div class="dropdown-content">
+                                                <p>42</p>
+                                            </div>
+                                        </div>
+                                        <div class="add-to-basket-button">
+                                                <span class="add-to-basket-icon"><img src="../img/Basket.png"
+                                                                                      alt=""></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="description__more-info">
+                                    <a href="" class="descrition__show-more">More details</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide__tovar-sections">
+                            <div class="tovar-sections__photo">
+                                <img src="../img/Product-image-blue.png" alt="" class="photo-boot">
+                            </div>
+                            <div class="tovar-section-description">
+                                <h2>AIR JORDAN 1 <br>RETRO HIGH OG</h2>
+                                <div class="description__price-buy">
+                                    <h4>$275</h4>
+                                    <div class="size-change">
+                                        <p>size</p>
+                                        <div id="down-triangle"></div>
+                                        <div class="dropdown">
+                                            <span>41</span>
+                                            <div class="dropdown-content">
+                                                <p>42</p>
+                                            </div>
+                                        </div>
+                                        <div class="add-to-basket-button">
+                                                <span class="add-to-basket-icon"><img src="../img/Basket.png"
+                                                                                      alt=""></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="description__more-info">
+                                    <a href="" class="descrition__show-more">More details</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide__tovar-sections">
+                            <div class="tovar-sections__photo">
+                                <img src="../img/Product-Image.png" alt="" class="photo-boot">
+                            </div>
+                            <div class="tovar-section-description">
+                                <h2>AIR JORDAN 1 <br>RETRO HIGH OG</h2>
+                                <div class="description__price-buy">
+                                    <h4>$275</h4>
+                                    <div class="size-change">
+                                        <p>size</p>
+                                        <div id="down-triangle"></div>
+                                        <div class="dropdown">
+                                            <span>41</span>
+                                            <div class="dropdown-content">
+                                                <p>42</p>
+                                            </div>
+                                        </div>
+                                        <div class="add-to-basket-button">
+                                                <span class="add-to-basket-icon"><img src="../img/Basket.png"
+                                                                                      alt=""></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="description__more-info">
+                                    <a href="" class="descrition__show-more">More details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-swiper-type">
+            <div class="swiper__arrowside">
+                <div class="arrowside__arrows">
+                    <div class="arrow-left">
+                        <p>&lt; Previous</p>
+                    </div>
+                    <div class="arrow-right">
+                        <p>Next &gt</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper mySecondSwiper">
+                <div class="swiper-wrapper tovar-wrapper">
+                    <div class="swiper-slide tovar-description">
+                        <div class="tovar">
+                            <img src="../img/Boot-product.png" alt="">
+                            <h4>nike cosmic unity 2</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tovar-description">
+                        <div class="tovar">
+                            <img src="../img/boot-tovar2.png" alt="">
+                            <h4>nike sb dunk high</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tovar-description">
+                        <div class="tovar">
+                            <img src="../img/boot-tovar-model.png" alt="">
+                            <h4>nike dynamo go se</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tovar-description">
+                        <div class="tovar">
+                            <img src="../img/Boot-product.png" alt="">
+                            <h4>nike cosmic unity 2</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tovar-description">
+                        <div class="tovar">
+                            <img src="../img/boot-tovar2.png" alt="">
+                            <h4>nike sb dunk high</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tovar-description">
+                        <div class="tovar">
+                            <img src="../img/boot-tovar-model.png" alt="">
+                            <h4>nike dynamo go se</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tovar-description">
+                        <div class="tovar">
+                            <img src="../img/boot-tovar2.png" alt="">
+                            <h4>nike sb dunk high</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tovar-description">
+                        <div class="tovar">
+                            <img src="../img/boot-tovar-model.png" alt="">
+                            <h4>nike dynamo go se</h4>
+                        </div>
+                    </div>
+                    <div class="swiper-slide tovar-description">
+                        <div class="tovar">
+                            <img src="../img/Boot-product.png" alt="">
+                            <h4>nike cosmic unity 2</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <div class="labels-text">
+            <img src="../img/Labels.png" class="texts-images" alt="">
+        </div>
+    </section>
+    <section class="section-title">
+        <div class="title__head">
+            <h1>The Essence <img src="../img/Rectangle.png" alt="">
+                <br>
+                <span class="colored-text">HANDCRAFTED</span>
+                <br>
+                <img src="../img/Rectangle-2.png" alt="">
+                OF FOOTWEAR.
+            </h1>
+        </div>
+        <div class="title__terms-of-use">
+                <span class="text-padding">
+                    <p>In terms of footwear, we are the first in Canada to have opened not simple "shops" but real
+                        company outlets that offer the same service as the artisan</p>
+                    <span>
+                        <div class="text-padding">
+                            <p>shops of yesteryear: this to make you go without fail every time you want to buy a
+                                pair of handmade genuine leather shoes. Without fear of making </p>
+                        </div>
+                        <br>
+                        <div class="text-padding">
+                            <p>mistakes and with the certainty that you will be able to wear them comfortably from
+                                the beginning.</p>
+                        </div>
+                        <br>
+                        <div class="text-padding">
+                            <p>Are you also curious to find out why hundreds of people choose us every day?</p>
+                        </div>
+                        <div class="tite-show-more">
+                            <a href="" class="show-more-button">More details</a>
+                        </div>
+        </div>
+    </section>
+    <section class="section-best-sellers">
+        <div class="sellers__title">
+            <h1 class="sellers__title">Best sellers</h1>
+        </div>
+        <div class="sellers-card">
+            <div class="card__images-women card__image">
+                <div class="imge__text-side">
+                    <h2>Women</h2>
+                </div>
+            </div>
+            <div class="card__images-kids card__image">
+                <div class="imge__text-side">
+                    <h2>Kids</h2>
+                </div>
+            </div>
+            <div class="card__images-men card__image">
+                <div class="imge__text-side">
+                    <h2>Men</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Show-product-image">
+        <div class="product-image__logo">
+            <h1>Sports <br>
+                <span class="logo__text-color">time</span>
+            </h1>
+        </div>
+        <div class="image__tovar-grid">
+            <div class="grid-tovar-one"> <img src="../img/1.png" alt=""></div>
+            <div class="grid-tovar-two"><img src="../img/2.png" alt=""></div>
+            <div class="grid-tovar-three"><img src="../img/3.png" alt=""> </div>
+            <div class="grid-tovar-four"><img src="../img/4.png" alt=""> </div>
+            <div class="grid-tovar-five"><img src="../img/5.png" alt=""> </div>
+            <div class="grid-tovar-six"><img src="../img/6.png" alt=""> </div>
+        </div>
+        <div class="product-image__view-more">
+            <a href="" class="view-more-button">Lets Discover More</a>
+        </div>
+
+    </section>
+    <section class="most-modern-shoes">
+        <div class="modern-shoes__image">
+            <div class="image-card">
+                <img src="../img/modern-shoes.png">
+            </div>
+        </div>
+        <div class="modern-shoes__desctiption">
+            <h1>WE PROVIDE MODERN SHOES</h1>
+            <p>Design for the way you live your life. Atoms are beautiful in their
+                simplicity, supporting your feet with absolute comfort.
+            </p>
+            <div class="moder-shoes__button">
+                <a href="" class="modern-shoes__show-more">More details</a>
+            </div>
+        </div>
+    </section>
+    <section class="favorite-tovar-styles">
+        <div class="styles__logo">
+            <h1>our favorite <span class="logo-color">nike</span> styles<span class="logo-color">.</span></h1>
+        </div>
+        <div class="stlyes-tovar-flex">
+            <div class="flex__tovar-card">
+                <div class="card__tovar-title">
+                    <h5>Nike mercurial superfly</h5>
+                    <span class="title__tovar-price">$271</span>
+                </div>
+                <div class="card-image">
+                    <img src="../img/image-footbal.png" alt="">
+                </div>
+            </div>
+            <div class="flex__tovar-card">
+                <div class="card__tovar-title">
+                    <h5>Nike mercurial superfly</h5>
+                    <span class="title__tovar-price">$216</span>
+                </div>
+                <div class="card-image">
+                    <img src="../img/image-woman.png" alt="">
+                </div>
+            </div>
+            <div class="flex__tovar-card">
+                <div class="card__tovar-title">
+                    <h5>Nike mercurial superfly</h5>
+                    <span class="title__tovar-price">$187</span>
+
+                    <div class="card-image">
+                        <img src="../img/image-air.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners-section">
+        <div class="section-logos">
+            <img src="../img/Logo-addidas.png" alt="">
+            <img src="../img/Logo-nike.png" alt="">
+            <img src="../img/Logo-puma.png" alt="">
+            <img src="../img/Logo-converse.png" alt="">
+            <img src="../img/Logo-reebok.png" alt="">
+            <img src="../img/Logo-vans.png" alt="">
+            <img src="../img/Logo-jordan.png" alt="">
+            <img src="../img/Logo-new-balance.png" alt="">
+        </div>
+    </section>
+    <section class="section-peoples-shoes-desc">
+        <div class="desc__section-description">
+            <h1>BEST SHOES FOR THE BEST PEOPLE</h1>
+            <p>Design for the way you live your life. Atoms are beautiful in
+                their simplicity, supporting your feet with absolute comfort.</p>
+
+        </div>
+        <div class="desc__section-photoes">
+            <div class="div1"><img src="../img/Box.png" alt=""></div>
+            <div class="div2"><img src="../img/Box-tow.png" alt=""></div>
+            <div class="div3"><img src="../img/Box-three.png" alt=""></div>
+        </div>
+    </section>
+</div>
+</body>
+<script th:src="@{/js/Index.js}"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10.3.0/swiper-bundle.min.js"></script>
+
+
+</html>

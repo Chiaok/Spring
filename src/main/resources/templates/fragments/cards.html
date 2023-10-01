@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <th:block th:fragment = "slider-card (shoes)">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide__tovar-sections">
+                    <div class="tovar-sections__photo">
+                        <img th:src="@{/img/${shoes.image}}" alt="" class="photo-boot">
+                    </div>
+                    <div class="tovar-section-description">
+                        <h2 th:text="${shoes.name}}">AIR JORDAN 1 <br>RETRO HIGH OG</h2>
+                        <div class="description__price-buy">
+                            <h4 >$[[${shoes.price}]]</h4>
+                            <div class="size-change">
+                                <p>size</p>
+                                <div id="down-triangle"></div>
+                                <div class="dropdown">
+                                    <span>41</span>
+                                    <div class="dropdown-content">
+                                        <p>42</p>
+                                    </div>
+                                </div>
+                                <div class="add-to-basket-button">
+                                    <span class="add-to-basket-icon"><img th:src="@{/img/Basket.png}"
+                                                                                      alt=""></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="description__more-info">
+                            <a href="" class="descrition__show-more">More details</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </th:block>
+</body>
+</html>
